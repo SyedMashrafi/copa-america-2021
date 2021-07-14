@@ -1,15 +1,16 @@
- 
  /*----------- header start ---------*/
- 
- header{
-     background-color: blue;
-     height: 100vh;
- }
- .header-content{
-     display: grid;
-     grid-template-columns: repeat(2,1fr);
- }
-.header-title{
+
+ header {
+    background-color: blue;
+    height: 700px;
+}
+
+.header-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.header-title {
     position: relative;
     left: 200px;
     top: 150px;
@@ -17,104 +18,104 @@
     color: white;
 }
 
-.header-button{
+.header-button {
     background-color: rgb(255, 1, 77);
     padding: 5px 20px;
     text-decoration: none;
     color: white;
     transition: .5s ease-out;
 }
-.header-button:hover{
+
+.header-button:hover {
     background-color: rgb(158, 0, 79);
     color: orange;
     transition: .5s ease-in;
 }
- .header-banner{
-     width: 400px;
-     position: relative;
-     left: 200px;
-     top: 150px;
- }
 
- main{
+.header-banner {
+    left: 20px;
+    top: 200px;
+    position: relative;
+    width: 500px;
+}
+
+main {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    
-   
+    justify-content: center;
 }
 
-.container{
-   
-   width: 1000px;
-   
-   
-   margin: 18px;
-   
+.container {
+    width: 1000px;
 }
- .players{
-         display: grid;
-         grid-template-columns: repeat(3,1fr);
-         grid-gap:30px;
- }
- 
- .player{
-    
-     width: 300px;
-     height: 450px;
-     box-shadow: 0 0 15px gray;
-     padding: 10px;
- }
- .player-photo img{
-width: 300px;
- }
 
- .copa-america{
- box-shadow: 0 0 10px rgba(122, 216, 134, 0.794);
-  width: 300px;
-  margin-top: 100px;
-  padding: 20px;
+.players {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
 
- }
- .América img{
-     width: 100%;
- }
+.player {
+    width: 300px;
+    height: 450px;
+    box-shadow: 0 0 15px gray;
+    padding: 10px;
+}
 
+.player-photo img {
+    width: 300px;
+}
 
-footer{
+.copa-america {
+    box-shadow: 0 0 10px rgba(122, 216, 134, 0.794);
+    width: 300px;
+    margin-top: 100px;
+    padding: 20px;
+    margin: auto;
+
+}
+
+.América img {
+    width: 100%;
+}
+
+footer {
     display: flex;
     justify-content: center;
     margin-top: 100px;
 }
- .footer-content{
-     width: 300px;
-     text-align: center;
-     
- }
- .footer-logo img{
-     width: 300px;
- }
 
- .footer-icon{
-     margin: 0 10px;
- }
-
-
-
-
-
- /* mobile mode style */
-  
- @media only screen and (max-width:688px){
-    .players{
-        
-        grid-template-columns: repeat(1,1fr);
-
-        
+.footer-content {
+    width: 300px;
+    text-align: center;
 }
 
- }
+.footer-logo img {
+    width: 300px;
+}
 
+.footer-icon {
+    margin: 0 10px;
+}
 
+/* mobile mode style */
 
-  
+@media only screen and (max-width:688px) {
+    header {
+        height: 700px;
+    }
+    .header-content, .players {
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+    }
+    .header-title {
+        left: 50px;
+        top: 150px;
+        font-size: 15px;
+        width: 300px;
+    }
+    .header-banner {
+        width: 300px;
+        left: 20px;
+        top: 200px;
+    }
+}
