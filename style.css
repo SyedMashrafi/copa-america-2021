@@ -1,0 +1,120 @@
+ 
+ /*----------- header start ---------*/
+ 
+ header{
+     background-color: blue;
+     height: 100vh;
+ }
+ .header-content{
+     display: grid;
+     grid-template-columns: repeat(2,1fr);
+ }
+.header-title{
+    position: relative;
+    left: 200px;
+    top: 150px;
+    font-size: 30px;
+    color: white;
+}
+
+.header-button{
+    background-color: rgb(255, 1, 77);
+    padding: 5px 20px;
+    text-decoration: none;
+    color: white;
+    transition: .5s ease-out;
+}
+.header-button:hover{
+    background-color: rgb(158, 0, 79);
+    color: orange;
+    transition: .5s ease-in;
+}
+ .header-banner{
+     width: 400px;
+     position: relative;
+     left: 200px;
+     top: 150px;
+ }
+
+ main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+   
+}
+
+.container{
+   
+   width: 1000px;
+   
+   
+   margin: 18px;
+   
+}
+ .players{
+         display: grid;
+         grid-template-columns: repeat(3,1fr);
+         grid-gap:30px;
+ }
+ 
+ .player{
+    
+     width: 300px;
+     height: 450px;
+     box-shadow: 0 0 15px gray;
+     padding: 10px;
+ }
+ .player-photo img{
+width: 300px;
+ }
+
+ .copa-america{
+ box-shadow: 0 0 10px rgba(122, 216, 134, 0.794);
+  width: 300px;
+  margin-top: 100px;
+  padding: 20px;
+
+ }
+ .América img{
+     width: 100%;
+ }
+
+
+footer{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+ .footer-content{
+     width: 300px;
+     text-align: center;
+     
+ }
+ .footer-logo img{
+     width: 300px;
+ }
+
+ .footer-icon{
+     margin: 0 10px;
+ }
+
+
+
+
+
+ /* mobile mode style */
+  
+ @media only screen and (max-width:688px){
+    .players{
+        
+        grid-template-columns: repeat(1,1fr);
+
+        
+}
+
+ }
+
+
+
+  
